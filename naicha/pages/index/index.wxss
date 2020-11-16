@@ -1,1 +1,36 @@
-/* pages/index/index.wxss */
+.home-header{
+  width: 100%;
+  padding-left: 15rpx;
+  box-sizing: border-box;
+}
+.header-top{
+  font-size: 36rpx;
+  color: #002242;
+}
+.header-center{
+  font-size: 20rpx;
+  color: rgb(162, 162, 162);
+  line-height: 40rpx;
+}
+.header-bot{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-bot image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.header-bot text{
+  margin-left: 20rpx;
+}
+.swiper{
+  padding: 15rpx;
+  box-sizing: border-box;
+  height: 340rpx;
+}
+.banner-img{
+  width: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+}

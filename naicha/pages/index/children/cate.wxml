@@ -1,0 +1,13 @@
+<view class="cate">
+  <view class="cate-left">
+      <view class="cate-item" wx:for="{{cateTitle}}" wx:key="index" >
+        <image class="cate-img" src="{{item.titUrl}}"></image>
+        <text class="cate-title" >{{item.title}}</text>
+      </view>
+  </view>
+  <view class="cate-right">
+    <view class="lable">
+      共同抗议
+    </view>
+  </view>
+</view>
