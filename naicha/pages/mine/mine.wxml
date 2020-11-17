@@ -1,4 +1,7 @@
 <!--pages/mine/mine.wxml-->
+<!-- 过滤金钱 -->
+<wxs src="./wxs/amountFilter.wxs" module="amountFilter" />
+
 <view class="top">
   <view class="pageTit">
     我的
@@ -16,12 +19,12 @@
   <view class="tools" wx:if="{{isLoadin}}">
     <view class="toolsItem">
       <image src="../../assets/tools/cup.png"></image>
-      <view class="toolsContent">{{10}}</view>
+      <view class="toolsContent">{{userInfo.integral}}</view>
       <view class="toolsTit">积分商城</view>
     </view>
     <view class="toolsItem">
       <image src="../../assets/tools/wallet.png"></image>
-      <view class="toolsContent">￥{{"0.00"}}</view>
+      <view class="toolsContent">￥{{amountFilter(userInfo.amount)}}</view>
       <view class="toolsTit">钱包</view>
     </view>
     <view class="toolsItem">
@@ -31,7 +34,7 @@
     </view>
     <view class="toolsItem">
       <image src="../../assets/tools/vip.png"></image>
-      <view class="toolsContent">{{"Lv1"}}</view>
+      <view class="toolsContent">Lv{{userInfo.vip}}</view>
       <view class="toolsTit">会员中心</view>
     </view>
   </view>

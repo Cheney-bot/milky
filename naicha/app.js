@@ -34,7 +34,6 @@ App({
       this.login();
     }
   },
-
   login() {
     //登录:第一步，获得code
     wx.login({
@@ -54,6 +53,9 @@ App({
 
             // 登录第七步：保存登录态
             wx.setStorageSync('TOKEN', token);
+            getCurrentPages()[0].setData({
+              isLoadin:true
+            })
           },
           fail(error) {
             console.log(error);

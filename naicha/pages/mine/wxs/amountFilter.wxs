@@ -1,0 +1,4 @@
+// 过滤金钱
+module.exports = amountFilter = function (amount) {
+  return amount.toFixed(2);
+}
