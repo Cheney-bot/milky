@@ -2,7 +2,8 @@ const Koa = require("koa");
 const error = require("koa-json-error");
 const parameter = require("koa-parameter");
 const milkyRouter = require('./router/milkyRouter')
-
+const user = require('./router/user')
+const auth = require('./router/auth')
 const app = new Koa();
 
 // 处理错误
@@ -34,6 +35,7 @@ parameter(app);
 
 // 使用路由
 app.use(milkyRouter.routes()).use(milkyRouter.allowedMethods());
-
+app.use(auth.routes()).use(auth.allowedMethods());
+app.use(user.routes()).use(user.allowedMethods());
 
 module.exports = app;
