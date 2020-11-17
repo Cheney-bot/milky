@@ -40,12 +40,9 @@
 }
 .list-item{
   display: flex;
-  border-top: 1rpx dotted #333;
+  border-bottom: 1rpx dotted #333;
   padding: 10rpx 0;
   box-sizing: border-box;
-}
-.list-item:nth-child(1){
-  border: none;
 }
 .item-left{
   width: 120rpx;

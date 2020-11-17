@@ -14,11 +14,16 @@ Page({
     milkyList:[],
     // 商品规格的展示
     isCarShow:false,
+    // 展示商品的详情数据
+    milkyData:{},
+    // 是否展示购物车
+    showCar:false,
     // 给购物车的数据
-    milkyData:{}
+    carData:{},
+    padding:0
   },
 
-  // 展示car的事件
+  // 展示选择商品信息的事件
   showCarAction(ev){
     this.setData({
       isCarShow:!this.data.isCarShow,
@@ -26,9 +31,16 @@ Page({
     this.setData({
       milkyData:ev.detail
     })
-
   },
 
+  // 展示car的事件
+  showAction(ev){
+    this.setData({
+      showCar:!this.data.showCar,
+      carData:ev.detail,
+      padding:'200rpx'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

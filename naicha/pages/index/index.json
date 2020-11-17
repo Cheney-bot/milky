@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "cate":"./children/cate/cate",
-    "addCar":"./children/addCar/addCar"
+    "addCar":"./children/addCar/addCar",
+    "showCar":"../../components/car-bar/car-bar"
   }
   
 }

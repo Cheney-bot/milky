@@ -46,12 +46,12 @@
         {{choose1.data }}、{{choose2.data }}、{{choose3.data }}
       </view>
       <view class="choose-num">
-        <image class="num-img" src="../../../../assets/remove.png"  bindtap="reduceAction" />
+        <image class="num-img" src="../../../../assets/reduce.png"  bindtap="reduceAction" />
         <text class="total-num" >{{totalCount}}</text>
         <image class="num-img" src="../../../../assets/add.png"  bindtap="addAction" />
       </view>
     </view>
-    <view class="addCar">
+    <view class="addCar" bindtap="addCarAction" >
       加入购物车
     </view>
   </view>

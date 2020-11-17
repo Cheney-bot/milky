@@ -1,0 +1,21 @@
+<view class="car-wrap" style="height:{{height}}" >
+  <view class="cover" wx:if="{{!showImage}}" bindtap="showDetailAction" ></view>
+  <view class="car-data" wx:if="{{showDetail}}" >
+    <view class="car-header">
+      <text class="title" >古茗茶饮旗舰店</text>
+      <view class="remove-box" >
+        <image class="remove-icon" src="../../assets/remove.png" ></image>
+        <text class="remove-text" >清空购物篮</text>
+      </view>
+    </view>
+  </view>
+
+<view class="car-bar-wrap">
+  <view class="image-box" >
+    <image class="car-icon" wx:if="{{showImage}}" src="../../assets/car.png"  bindtap="showDetailAction" ></image>
+  </view>
+  <text class="pay-money">￥99.00</text>
+  <view class="payment" >结算</view>
+</view>
+
+</view>

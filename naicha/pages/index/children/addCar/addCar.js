@@ -15,7 +15,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    showData:null,
+    showData:{},
     choose1:{
       activeIndex:0,
       data:''
@@ -31,7 +31,7 @@ Component({
     // 商品总价
     totalPrice:0,
     // 商品数量
-    totalCount:1
+    totalCount:1,
   },
   
   /**
@@ -99,6 +99,21 @@ Component({
           totalCount:this.data.totalCount+1
         })
       }
+    },
+
+    // 添加到购物车的事件
+    addCarAction(ev){
+      this.triggerEvent('showCarAction');
+      
+      let goodsData = {
+        options:`${this.data.choose1.data}、${this.data.choose2.data}、${this.data.choose3.data}`,
+        totalPrice:this.data.totalPrice,
+        totalCount:this.data.totalCount,
+        name:this.data.showData.name
+      }
+      this.triggerEvent('showAction',goodsData);
+
+      // Pubsub.publish("addCar",goodsData)
     }
   },
 
