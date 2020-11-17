@@ -3,6 +3,7 @@ const MilkyCtrl = require('../controllers/MilkyCtrl')
 
 
 // 请求路径
+// 商品信息
 const router = new Router({ prefix: "/api/milky" });
 
 // 查询商品的信息
