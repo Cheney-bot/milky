@@ -1,0 +1,60 @@
+<view class="car-bigWrap">
+  <view class="car-wrap">
+  <view class="car-header">
+    <view class="car-header-left">
+      <image class="car-img" src="{{showData.imgUrl}}"></image>
+    </view>
+    <view class="car-header-right">
+      <view class="milky-name">{{showData.name}}</view>
+      <view class="milky-desc">{{showData.desc}}</view>
+      <view class="milky-price">￥{{showData.price}}</view>
+    </view>
+    <image src="../../../../assets/close.png" class="close" bindtap="closeAction"  ></image>
+  </view>
+  <view class="options">
+    <view class="option-item">
+      <view class="option-title">{{showData.option1.title}}</view>
+      <view class="subItem-box">
+        <view class="{{choose1.activeIndex === index ? 'subItem active' : 'subItem'}}" wx:key='index' wx:for="{{showData.option1.chooce}}" wx:for-item="subItem" bindtap="chooseAction1" data-index="{{index}}" data-option="{{showData.option1.chooce[index]}}" >
+            {{subItem}}
+        </view>
+      </view>
+    </view>
+    <view class="option-item">
+      <view class="option-title">{{showData.option2.title}}</view>
+      <view class="subItem-box">
+        <view class="{{choose2.activeIndex === index ? 'subItem active' : 'subItem'}}" wx:key='index' wx:for="{{showData.option2.chooce}}" wx:for-item="subItem" bindtap="chooseAction2" data-index="{{index}}" data-option="{{showData.option2.chooce[index]}}" >
+            {{subItem}}
+        </view>
+      </view>
+    </view>
+    <view class="option-item">
+      <view class="option-title">{{showData.option3.title}}</view>
+      <view class="subItem-box">
+        <view class="{{choose3.activeIndex === index ? 'subItem active' : 'subItem'}}" wx:key='index' wx:for="{{showData.option3.chooce}}" wx:for-item="subItem" bindtap="chooseAction3" data-index="{{index}}" data-option="{{showData.option3.chooce[index]}}" >
+            {{subItem}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="choose-box">
+    <view class="total-price">
+      ￥{{totalPrice}}
+    </view>
+    <view class="choose-option">
+      <view class="choose-left">
+        {{choose1.data }}、{{choose2.data }}、{{choose3.data }}
+      </view>
+      <view class="choose-num">
+        <image class="num-img" src="../../../../assets/remove.png"  bindtap="reduceAction" />
+        <text class="total-num" >{{totalCount}}</text>
+        <image class="num-img" src="../../../../assets/add.png"  bindtap="addAction" />
+      </view>
+    </view>
+    <view class="addCar">
+      加入购物车
+    </view>
+  </view>
+</view>
+<view class="cover"></view>
+</view>

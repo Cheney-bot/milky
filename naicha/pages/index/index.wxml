@@ -1,4 +1,4 @@
-<view>
+<view class="page">
   <view class="home-header" >
     <view class="header-top">
       古茗茶饮旗舰店
@@ -22,5 +22,7 @@
     </swiper-item>
   </swiper>
   
-  <cate/>
+  <cate bindshowCarAction='showCarAction' />
+  <addCar wx:if="{{isCarShow}}" milkyData="{{milkyData}}" bindshowCarAction='showCarAction'></addCar>
+
 </view>

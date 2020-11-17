@@ -1,0 +1,28 @@
+<view class="cate">
+  <view class="cate-left">
+      <view class="cate-item" wx:for="{{cateTitle}}" wx:key="index"  bindtap="milkyChangeAction"  data-cate="{{index}}">
+        <image class="cate-img" src="{{item.titUrl}}"></image>
+        <text class="cate-title" >{{item.title}}</text>
+      </view>
+  </view>
+  <view class="cate-right">
+    <view class="lable">
+      共同抗疫
+    </view>
+    <view class="listWrap">
+      <view class="list-item" wx:for="{{milkyList}}" wx:key="index" bindtap="chooseOptionsAction" data-item="{{item}}"  >
+        <view class="item-left">
+          <image class="item-img" src="{{item.imgUrl}}" ></image>
+        </view>
+        <view class="item-right">
+          <view class="item-name" >{{item.name}}</view>
+          <view class="item-desc">{{item.desc}}</view>
+          <view class="item-bot">
+            <text class="item-price">￥{{item.price}}.00</text>
+            <text class="item-lable" >选规格</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
