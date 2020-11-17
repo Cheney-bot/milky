@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navbar":"./children/navbar/navbar"
+  },
+  "navigationBarTitleText":"取茶"
 }

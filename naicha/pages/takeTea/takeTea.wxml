@@ -1,2 +1,49 @@
-<!--pages/takeTea/takeTea.wxml-->
-<text>pages/takeTea/takeTea.wxml</text>
+<!-- 引入wxs计算总价和总数 -->
+<wxs src="./wxs/total.wxs" module="totalPrice" />
+<!-- 顶部导航 -->
+<navbar actIndex="{{actIndex}}" bindSelectAct="selectAct" />
+<!-- 无订单 -->
+<view class="noOrder" wx:if="{{orderList.length===0?true:false}}">
+  <view class="imgWrap">
+    <image src="../../assets/bg1.png"></image>
+    <view>暂无订单</view>
+  </view>
+  <view class="toBuy">
+    去点单
+  </view>
+</view>
+<!-- 有订单 -->
+<view class="hasOrder" wx:else>
+  <view class="orderItem" wx:for="{{orderList}}" wx:key="index">
+    <view class="orderTit">
+      <view>
+        {{item.shopName}}
+      </view>
+      <view class="status">
+        {{item.status}}
+      </view>
+    </view>
+
+    <scroll-view class="goods" scroll-x="true">
+      <image class="goodsItem" wx:for="{{item.goods}}" wx:key="index" src="{{item.imgUrl}}" lazy-load="{{true}}" />
+    </scroll-view>
+    <view class="orderMes">
+      <view class="orderTxt">
+        订单编号：{{item['订单编号']}}
+      </view>
+      <view class="orderTxt">
+        <view>
+          订单时间：{{item['订单时间']}}
+        </view>
+        <view class="priceWrap">
+          <text>共{{item.goods.length}}件商品</text>
+          <text class="price">合计￥{{totalPrice(item.goods)}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="operation">
+      {{item.status==="制作中"?"取餐码":"再来一单"}}
+    </view>
+  </view>
+  <view class="noMore">没有更多啦~</view>
+</view>

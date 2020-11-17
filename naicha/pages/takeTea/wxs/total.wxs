@@ -1,0 +1,8 @@
+// 计算订单总价
+module.exports = totalPrice = function (params) {
+  var totalPrice = 0;
+  params.forEach(function(item){
+    totalPrice += item.price;
+  })
+  return totalPrice.toFixed(2);
+}

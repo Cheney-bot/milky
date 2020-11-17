@@ -1,0 +1,11 @@
+<view class="navbar">
+  <view class="navbarItem" bindtap="selectAct"  data-index="{{0}}">
+    <text class="{{actIndex===0?'active':''}}">未完成</text>
+  </view>
+  <view class="navbarItem"  bindtap="selectAct"  data-index="{{1}}">
+    <text class="{{actIndex===1?'active':''}}">全部</text>
+  </view>
+  <view class="navbarItem"  bindtap="selectAct" data-index="{{2}}">
+    <text class="{{actIndex===2?'active':''}}">退款/取消</text>
+  </view>
+</view>
