@@ -54,6 +54,8 @@
         {
           "name": "payment",
           "pathName": "pages/payment/payment",
+          "name": "订单",
+          "pathName": "pages/order/order",
           "query": "",
           "scene": null
         }

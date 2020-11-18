@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mesWrap" : "../../components/mesWrap/mesWrap"
+  }
+}

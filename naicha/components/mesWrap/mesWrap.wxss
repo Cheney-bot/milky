@@ -1,0 +1,19 @@
+/* components/mesWrap/mesWrap.wxss */
+.MesWrap{
+  width:100%;
+  background-color: #fff;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  padding:0 20rpx;
+  margin-bottom: 40rpx;
+  box-shadow: 0px 4rpx 16rpx 0px rgba(244, 244, 244);
+}
+.title{
+  width:100%;
+  font-size: 28rpx;
+  font-weight: bolder;
+  height:80rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #f2f2f2;
+}

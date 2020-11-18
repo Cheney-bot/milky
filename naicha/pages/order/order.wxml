@@ -1,0 +1,43 @@
+<!--pages/order/order.wxml-->
+<!-- wxs文件 -->
+<wxs src="../../wxs/toFixed2.wxs" module="toFixed2" />
+<wxs src="../../wxs/totalPrice.wxs" module="totalPrice" />
+<!-- 详情信息 -->
+<mesWrap>
+  <view slot="title" class="title">
+    <image class="titleImg" src="../../assets/house.png" />
+    <text class="shopName">{{orderInfo.shopName}}</text>
+  </view>
+  <view slot="content">
+    <view class="orderList">
+      <view class="orderItem" wx:for="{{orderInfo.goods}}" wx:key="index">
+        <image class="goodImg" src="{{item.imgUrl}}" mode="aspectFill"/>
+        <view class="goodText">
+          <view class="goodMes">
+            <text class="name">{{item.name}}</text>
+            <view class="goodPay">
+              <view class="numPrice">
+                {{toFixed2(item.price)}} x {{item.num}}
+              </view>
+              <view class="totalPrice">{{totalPrice({price:item.price,num:item.num})}}</view>
+            </view>
+          </view>
+          <view class="options">
+            <text>杯型：{{item.option1}}</text>
+            <text>温度：{{item.option2}}</text>
+            <text>甜度：{{item.option3}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="totalWrap">
+      <view class="call">
+        <image src="../../assets/phone.png"/>
+        <text>联系商家</text>
+      </view>
+      <view class="total">
+        合计：{{totalPrice(orderInfo.goods)}}
+      </view>
+    </view>
+  </view>
+</mesWrap>
