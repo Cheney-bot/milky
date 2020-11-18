@@ -1,0 +1,13 @@
+// 根据价格和数量计算总金额
+module.exports = totalPrice = function(params){
+  var totalPrice = 0;
+  if(params.constructor === "Object"){ // 传入对象，取price和num计算
+    totalPrice = params.price * params.num;
+    
+  }else if(params.constructor === "Array"){ // 传入数组，遍历取price和num计算并加和
+    params.forEach(function(item){
+      totalPrice += item.price * item.num;
+    });
+  }
+  return totalPrice.toFixed(2);
+}

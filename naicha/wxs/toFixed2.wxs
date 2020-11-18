@@ -1,0 +1,4 @@
+// 金额转为两位小数
+module.exports = toFixed2 = function (params) {
+  return params.toFixed(2);
+}

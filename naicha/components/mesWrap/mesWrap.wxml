@@ -1,0 +1,5 @@
+<!--components/mesWrap/mesWrap.wxml-->
+<view class="MesWrap">
+  <slot name="title"></slot>
+  <slot name="content"></slot>
+</view>

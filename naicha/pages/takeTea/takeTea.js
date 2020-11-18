@@ -67,5 +67,11 @@ Page({
     this.setData({
       actIndex:ev.detail.actIndex
     })
-  }
+  },
+  // 进入订单详情页
+  toOrder:()=>{
+    wx.navigateTo({
+      url:"../order/order"
+    })
+  } 
 })

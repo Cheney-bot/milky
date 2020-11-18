@@ -14,7 +14,7 @@
 </view>
 <!-- 有订单 -->
 <view class="hasOrder" wx:else>
-  <view class="orderItem" wx:for="{{orderList}}" wx:key="index">
+  <view class="orderItem" wx:for="{{orderList}}" wx:key="index" bindtap="toOrder">
     <view class="orderTit">
       <view>
         {{item.shopName}}
