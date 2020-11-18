@@ -1,0 +1,30 @@
+<view class="wrap">
+  <view class="subpage">
+  <view class="page-wrap">
+    <view class="header-bar">
+      <view class="header-item" wx:for="{{headerData}}" wx:key='index' style="{{index === headerIndex ? 'color:#333;font-weight:bold':'color:#999;font-weight:normal'}}" bindtap="changeHeaderIndex" data-index="{{index}}" >
+        {{item.title}}
+        <text class="header-line" wx:if="{{index === headerIndex}}" ></text>
+      </view>
+    </view>
+    <outSide wx:if="{{showSide}}" />
+    <inSide wx:else />
+    <info/>
+    <view class="vip-card">
+      <view class="vip-left">会员卡选择</view>
+      <view class="vip-right">
+        <text>古茗会员卡</text>
+        <image src="../../assets/arrows.png" class="arrows" ></image>
+      </view>
+    </view>
+    <remark/>
+  </view>
+</view>
+
+<view class="payment-box">
+  <view class="payment-left" >￥16.00</view>
+  <view class="payment-right" >
+    <view class="payment">结算</view>
+  </view>
+</view>
+</view>

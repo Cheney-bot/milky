@@ -1,4 +1,6 @@
 //app.js
+import Request from "./http/request"
+import {userInfoApi} from "./http/api"
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -8,7 +10,7 @@ App({
     this.checkLogin();
   },
   checkLogin() {
-    // 检查登录
+    // 检查登录,
     const token = wx.getStorageSync('TOKEN');
     if (token) {
       //检查token是否过期
@@ -18,12 +20,17 @@ App({
         data: {
           token
         },
-        success: ({
+        success:async ({
           statusCode
         }) => {
           if (statusCode !== 200) {
             //登录过期了
             this.login();
+          }else{
+            // 请求用户信息
+            const data = await Request.get(userInfoApi);
+            console.log(data);
+            
           }
         },
         fail: (error) => {

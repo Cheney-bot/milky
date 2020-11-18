@@ -19,7 +19,6 @@ Component({
     showImage:true,
     height:0
   },
-
   observers:{
     // 监听传入购物车的数据的变化
     'carData':(value)=>{
@@ -47,6 +46,11 @@ Component({
         })
       }
       
+    },
+
+    // 隐藏购物车事件
+    hideAction(){
+      this.triggerEvent('HideCar');
     }
   }
   

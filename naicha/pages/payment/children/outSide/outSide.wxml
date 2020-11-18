@@ -1,0 +1,16 @@
+<view class="outSide">
+  <view class="outSide-wrap" >
+    <view class="add" >
+      <view class="add-text" >添加地址</view>
+      <view class="right">
+        <image src="../../../../assets/arrows.png" class="arrows" ></image>
+      </view>
+    </view>
+    <view class="send" >
+      <view class="send-text">立即送出</view>
+      <view class="right">
+       <image src="../../../../assets/arrows.png" class="arrows"></image>
+      </view>
+    </view>
+  </view>
+</view>

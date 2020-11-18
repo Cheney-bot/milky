@@ -5,7 +5,7 @@
       <text class="title" >古茗茶饮旗舰店</text>
       <view class="remove-box" >
         <image class="remove-icon" src="../../assets/remove.png" ></image>
-        <text class="remove-text" >清空购物篮</text>
+        <text class="remove-text"  bindtap="hideAction" >清空购物篮</text>
       </view>
     </view>
   </view>

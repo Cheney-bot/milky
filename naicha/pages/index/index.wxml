@@ -27,6 +27,5 @@
   <addCar wx:if="{{isCarShow}}" milkyData="{{milkyData}}" bindshowCarAction='showCarAction' bindshowAction='showAction' ></addCar>
   </scroll-view>
 
-  <showCar wx:if="{{showCar}}" carData="{{carData}}"  />
-  <view class="cover"></view>
+  <showCar wx:if="{{showCar}}" carData="{{carData}}"  bindHideCar="hideCarAction"  />
 </view>

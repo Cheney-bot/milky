@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "inSide":"./children/inSide/inSide",
+    "outSide":"./children/outSide/outSide",
+    "info":"./children/info/info",
+    "remark":"./children/remark/remark"
+  },
+  "navigationBarTitleText": "确认订单"
+}

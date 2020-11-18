@@ -1,0 +1,97 @@
+.wrap{
+  width: 100%;
+  padding-bottom: 200rpx;
+}
+.subpage{
+  height: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+.page-wrap{
+  width: 100%;
+  height: 100%;
+}
+.header-bar{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  background-color: #fff;
+}
+.header-item{
+  flex: 1;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  line-height: 100rpx;
+}
+.header-line{
+  position: absolute;
+  width: 100rpx;
+  height: 4rpx;
+  background-color: #FA6400;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vip-card{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20rpx ;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 15rpx;
+  font-size: 26rpx;
+}
+.vip-left{
+  color: #65788d;
+  flex: 1;
+}
+.vip-right{
+  flex: 1;
+  color: #8f9dac;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.arrows{
+  width: 25rpx;
+  height: 25rpx;
+}
+.payment-box{
+  width: 100%;
+  height: 120rpx;
+  background-color: #002242;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+.payment-left{
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+  flex: 1;
+}
+.payment-right{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.payment{
+  width: 150rpx;
+  height: 60rpx;
+  background-color: #FECE51;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+}

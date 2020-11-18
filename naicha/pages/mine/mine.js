@@ -15,35 +15,4 @@ Page({
   getMandate:function(res){
     getApp().login();
   },
-  //生命周期函数--监听页面加载
-  onLoad: function (options) {
-    // 查看登录态
-    wx.getStorage({
-      key: 'TOKEN',
-      success:(res)=>{
-        this.setData({
-          isLoadin:true
-        }),
-        // 获取用户信息
-        wx.request({
-          url: 'http://localhost:3000/api/user/get_userinfo',
-          method: 'get',
-          data: {
-            token:res.data
-          },
-          success:(res)=>{
-            console.log(res);
-            this.setData({
-              userInfo:res.data
-            })
-          }
-        })
-      },
-      fail:(error)=>{
-        this.setData({
-          isLoadin:false
-        })
-      }
-    })
-  },
 })

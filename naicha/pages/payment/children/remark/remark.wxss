@@ -1,0 +1,50 @@
+.remark{
+  width: 100%;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.remark-wrap{
+  width: 100%;
+}
+.remark-top{
+  height: 100rpx;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-left{
+  font-size: 26rpx;
+  color: #65788d;
+  flex: 1;
+}
+.top-right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.weixin-img{
+  width: 25rpx;
+  height: 25rpx;
+}
+.top-text{
+  font-size: 26rpx;
+  color: #002242;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+.kouwei{
+  color: #999;
+  font-size: 26rpx;
+}
+.arrows{
+  width: 25rpx;
+  height: 25rpx;
+}
+.must{
+  color: #E71C1C;
+  font-size: 26rpx;
+}

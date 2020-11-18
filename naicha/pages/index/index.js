@@ -36,9 +36,16 @@ Page({
   // 展示car的事件
   showAction(ev){
     this.setData({
-      showCar:!this.data.showCar,
+      showCar:true,
       carData:ev.detail,
       padding:'200rpx'
+    })
+  },
+
+  // 隐藏car的事件
+  hideCarAction(ev){
+    this.setData({
+      showCar:false,
     })
   },
   /**

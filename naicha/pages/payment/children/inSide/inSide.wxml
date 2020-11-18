@@ -1,0 +1,33 @@
+<view class="inSide">
+  <view class="inSide-wrap" >
+    <view class="inSide-top">
+    <view class="address-tit">商家地址</view>
+    <view class="address-text" >广州市海珠区阅江西路222号广州塔一楼</view>
+    <view class="distance">
+      <view class="distance-left">距您1918.7km</view>
+      <view class="distance-right" >
+        <text class="distance-right-text" >查看地图</text>
+        <image src="../../../../assets/arrows.png" class="arrows" ></image>
+      </view>
+    </view>
+    </view>
+
+    <view class="inSide-bot">
+      <view class="bot-left">
+        <view class="bot-title" >自取时间</view>
+        <view class="bot-cont" >
+          <text>12.15</text>
+          <image  class="bot-arrows" src="../../../../assets/arrows.png" ></image>
+        </view>
+        
+      </view>
+      <view class="bot-right">
+        <view class="bot-title">预留电话</view>
+        <view class="bot-cont">
+          <text>13123124124</text>
+          <image  class="bot-arrows" src="../../../../assets/arrows.png" ></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+<view class="info">
+  <view class="info-wrap">
+    <view class="info-header">古茗茶饮旗舰店</view>
+    <view class="image-box">
+      <image src="../../../../assets/milky/milky1.jpg" class="img" ></image>
+      <view class="image-cont">
+        <view class="image-top">
+          <view class="image-name">芝芝莓莓</view>
+          <view class="image-price" >
+            ￥16.00
+          </view>
+        </view>
+        <view class="image-bot">
+          大杯，正常冰，七分甜
+        </view>
+      </view>
+    </view>
+    <view class="deliver">
+      <view class="deliver-left">配送费</view>
+      <view class="pay-count" >￥0.00</view>
+    </view>
+    <view class="vip-box">
+      <view class="vip-top">
+        <view class="vip-top-left">会员优惠</view>
+        <view class="pay-count" >-￥3.00</view>
+      </view>
+      <view class="vip-bot">
+        <view class="vip-bot-left">
+          优惠卷
+        </view>
+        <view class="vip-bot-right">
+          <view class="vip-none">暂无可用</view>
+          <image src="../../../../assets/arrows.png" class="arrows" ></image>
+        </view>
+      </view>
+    </view>
+    <view class="price">
+      <view class="discounts">
+        <text class="discounts-tit">以优惠</text>
+        <text class="discounts-cont" >￥3.00</text>
+      </view>
+      <view class="total-price">
+        <view>小计￥16.00</view>
+      </view>
+    </view>
+  </view>
+</view>

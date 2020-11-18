@@ -1,0 +1,26 @@
+<view class="remark">
+  <view class="remark-wrap">
+    <view class="remark-top">
+      <view class="top-left">支付方式</view>
+      <view class="top-right">
+        <image src="../../../../assets/weixin.png" class="weixin-img" ></image>
+        <text class="top-text" >微信支付</text>
+      </view>
+    </view>
+    <view class="remark-top">
+      <view class="top-left">备注</view>
+      <view class="top-right">
+        <text class="kouwei" >口味、偏好等要求</text>
+        <image src="../../../../assets/arrows.png" class="arrows" ></image>
+      </view>
+    </view>
+    <view class="remark-top">
+      <view class="top-left">餐具数量</view>
+      <view class="top-right">
+        <text class="must" >必选</text>
+        <image src="../../../../assets/arrows.png" class="arrows" ></image>
+      </view>
+    </view>
+  </view>
+</view>
+
