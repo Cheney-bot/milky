@@ -1,5 +1,5 @@
 const Router = require("koa-router");
-const MilkyCtrl = require('../controllers/MilkyCtrl')
+const MilkyCtrl = require('../controllers/MilkyCtrl');
 
 
 // 请求路径
